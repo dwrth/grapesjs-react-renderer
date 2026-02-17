@@ -7,19 +7,25 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.esm.js",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     },
     "./helpers": {
+      "types": "./dist/helpers.d.ts",
       "import": "./dist/helpers.esm.js",
-      "require": "./dist/helpers.js",
-      "types": "./dist/helpers.d.ts"
+      "require": "./dist/helpers.js"
     },
     "./factories": {
+      "types": "./dist/factories.d.ts",
       "import": "./dist/factories.esm.js",
-      "require": "./dist/factories.js",
-      "types": "./dist/factories.d.ts"
+      "require": "./dist/factories.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "helpers": ["./dist/helpers.d.ts"],
+      "factories": ["./dist/factories.d.ts"]
     }
   },
   "files": [

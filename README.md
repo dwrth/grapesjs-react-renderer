@@ -366,6 +366,23 @@ import {
 
 Full TypeScript support with generics and type inference. All types are exported:
 
+**Note:** For subpath imports (like `grapesjs-react-renderer/factories` or `grapesjs-react-renderer/helpers`) to work correctly, your `tsconfig.json` must use one of these `moduleResolution` settings:
+
+- `"moduleResolution": "bundler"` (recommended for Next.js, Vite, etc.)
+- `"moduleResolution": "node16"` 
+- `"moduleResolution": "nodenext"`
+
+If you're using an older setting like `"node"` or `"classic"`, update your `tsconfig.json`:
+
+```json
+{
+  "compilerOptions": {
+    "moduleResolution": "bundler", // or "node16" or "nodenext"
+    // ... other options
+  }
+}
+```
+
 ```tsx
 import type { 
   ComponentConfig,
