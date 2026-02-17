@@ -1,0 +1,42 @@
+# Source files
+src/
+examples/
+*.ts
+*.tsx
+!*.d.ts
+
+# Config files
+tsconfig.json
+tsup.config.ts
+.editorconfig
+.prettierrc*
+.eslintrc*
+
+# Development files
+DEVELOPMENT.md
+PACKAGE_SUMMARY.md
+*.log
+*.tsbuildinfo
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Dependencies
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
