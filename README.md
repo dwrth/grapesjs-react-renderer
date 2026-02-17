@@ -16,6 +16,8 @@ A powerful GrapesJS plugin that enables you to use React components directly in 
 
 ## Installation
 
+### From npm
+
 ```bash
 npm install grapesjs-react-renderer
 # or
@@ -23,6 +25,18 @@ yarn add grapesjs-react-renderer
 # or
 pnpm add grapesjs-react-renderer
 ```
+
+### From GitHub
+
+```bash
+npm install github:your-username/grapesjs-react-renderer
+# or
+yarn add github:your-username/grapesjs-react-renderer
+# or
+pnpm add github:your-username/grapesjs-react-renderer
+```
+
+The package will automatically build on installation thanks to the `prepare` script.
 
 ## Quick Start
 
